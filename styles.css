@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6d28d9, #a855f7);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4.5em;
+    animation: fadeInUp 1s ease-out;
+}
+
+header p {
+    font-size: 1.6em;
+    margin: 10px 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-button {
+    background: #e94e77;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.cta-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cta-button:hover {
+    background: #d23f62;
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Features Section */
+.features-section {
+    background: #fafafa;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 10px;
+}
+
+.feature-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 1s ease-out;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.feature-item:hover::before {
+    opacity: 1;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background: #f0f0f0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.how-it-works-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.how-it-works-list li {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeInUp 1s ease-out;
+}
+
+.how-it-image {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
